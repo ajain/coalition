@@ -1,15 +1,86 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "compass";
 
-h4 {
-  color: black;
-  font-family: "fertigo-script";
-  background-color: blue;
+$lightgreen: #72C2CB;
+$lightblue: #00A3EF;
+$lightestblue: white;
+
+*{ margin:0; padding:0; }
+
+p, ol, ul, td {
+  font-family: "gesta", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+body {
+
+  font-family: "gesta", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+
+
+// background-color: #f2f9fe;
+// @include filter-gradient(#f2f9fe, #d6f0fd, horizontal);
+// @include background-image(radial-gradient(center, ellipse cover, #f2f9fe 0%,#00A3EF 100%));
+
+
+  /* IE10 */
+  //background-image: -ms-radial-gradient(center top, circle closest-corner, #FFFFFF 100px, #72C2CB 500px, #00A3EF 1000px);
+
+  /* Mozilla Firefox */
+  background-image: -moz-radial-gradient(center top, circle closest-corner, #FFFFFF 100px, #72C2CB 500px, #00A3EF 1000px);
+
+  /* Opera */
+  background-image: -o-radial-gradient(center top, circle closest-corner, #FFFFFF 0%, #72C2CB 50%, #00A3EF 100%);
+
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-gradient(radial, center top, 0, center top, 480, color-stop(0, #FFFFFF), color-stop(0.5, #72C2CB), color-stop(1, #00A3EF));
+
+  /* Webkit (Chrome 11+) */
+  background-image: -webkit-radial-gradient(center top, circle closest-corner, #FFFFFF, #72C2CB , #00A3EF);
+
+  /* Proposed W3C Markup */
+  background-image: radial-gradient(center top, circle closest-corner, #FFFFFF 0%, #72C2CB 50%, #00A3EF 100%);
+
+  height: 1000px;
+}
+
+//these two CSS make the highlighter in browser a different color.
+::selection {
+  background: lightgreen; /* Safari */
   }
 
-p {
-  color: black;
-  font-family: "fertigo-script";
-  background-color: red;
-  }
+::-moz-selection {
+  background: lightgreen; /* Firefox */
+}
+
+#toolbar {
+  wdth: 100%;
+  height: 20px;
+  background-color: #000;
+  padding: 7px;
+}
+.content {
+  width: 920px;
+  height: 80%;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  border-radius: 25px;
+}
+.footer {
+  background-color: black;
+}
+
+body h1 {
+  color: red;
+}
+.contenttwo {
+  height: 450px;
+  width: 100%;
+  background-color: black;
+}

@@ -1,0 +1,12 @@
+/* Welcome to Compass.
+ //* In this file you should write your main styles. (or centralize your imports)
+ //* Import this file using the following HTML or equivalent:
+ //* <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass";
+
+body {
+  background-color: #1e5799; // Old browsers
+  //@include filter-gradient(#1e5799, #7db9e8, horizontal); // IE6-9 fallback on horizontal gradient
+  @include background-image(radial-gradient(center, ellipse cover,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%));
+}
