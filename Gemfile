@@ -4,6 +4,8 @@ gem 'rails', '3.2.3'
 gem 'haml'
 gem 'haml-rails'
 gem 'typekit'
+gem 'nokogiri'
+gem 'json'
 
 
 # Bundle edge Rails instead:

@@ -1,0 +1,33 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @story.name
+%p
+  %b Apid:
+  = @story.apid
+%p
+  %b Date Updated:
+  = @story.dateupdated
+%p
+  %b Authorname:
+  = @story.authorname
+%p
+  %b Author url:
+  = @story.author_url
+%p
+  %b Label:
+  = @story.label
+%p
+  %b Content:
+  = @story.content
+%p
+  %b Link:
+  = @story.link
+%p
+  %b Href:
+  = @story.href
+
+= link_to 'Edit', edit_story_path(@story)
+\|
+= link_to 'Back', stories_path

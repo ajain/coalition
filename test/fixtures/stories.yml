@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  apid: MyString
+  update: MyString
+  authorname: MyString
+  author_url: MyString
+  label: MyString
+  content: MyString
+  link: MyString
+  href: MyString
+
+two:
+  name: MyString
+  apid: MyString
+  update: MyString
+  authorname: MyString
+  author_url: MyString
+  label: MyString
+  content: MyString
+  link: MyString
+  href: MyString

@@ -1,4 +1,6 @@
 Coalition::Application.routes.draw do
+  resources :stories
+
   resources :posts do
     resources :comments
   end

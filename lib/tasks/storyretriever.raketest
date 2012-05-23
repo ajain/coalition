@@ -1,0 +1,23 @@
+task :fetch_stories => :environment do
+
+require 'nokogiri'
+require 'open-uri'
+
+doc = Nokogiri::XML(open(http://developerapi.ap.org/v2/categories.svc/31995/?contentOption=2&count=20&apiKey={q6xxbz9zr9gc5esvv8jda2r3})
+
+  stories = doc.search('//entry')
+
+    stories.each do |story|
+      @data = Story.new(
+        :name       => entry.at('title').text,
+        :content    => event.at('content').text)
+
+    @data.save
+
+    if @data.save
+        puts "Success"
+    else
+        puts "This didn't save, F***"
+    end
+    end
+end
